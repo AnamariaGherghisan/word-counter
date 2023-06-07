@@ -17,11 +17,12 @@ export const WordCounter = () => {
     setWordCount(wordLength);
   };
   return (
-  <div>
-    <div>
+  <div className="word-counter">
+    <div className="word-counter text-center">
       <textarea rows={10} placeholder="Type or paste your text here" onChange={handleOnChange}></textarea>
     </div>
-    <div>Word count: {wordCount}</div>
+    <div className="footer text-center">Word count: {wordCount}</div>
     </div>
   );
 };
+
